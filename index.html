@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1000 Years of Classical Music</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">♩ Classical Music</div>
+  <ul class="nav-links">
+    <li><a href="#timeline">Timeline</a></li>
+    <li><a href="#eras">Eras</a></li>
+    <li><a href="#graph">Graph</a></li>
+    <li><a href="early-music.html">Early Music</a></li>
+    <li><a href="baroque.html">Baroque</a></li>
+    <li><a href="classical-era.html">Classical</a></li>
+    <li><a href="romantic.html">Romantic</a></li>
+    <li><a href="modern.html">Modern</a></li>
+    <li><a href="contemporary.html">Contemporary</a></li>
+  </ul>
+</nav>
+
+<!-- HERO PARALLAX -->
+<section class="parallax hero" id="hero">
+  <div class="parallax-bg" style="background-image:url('https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=1800&q=80')"></div>
+  <div class="hero-content">
+    <p class="hero-sub">A thousand years of sound</p>
+    <h1>Classical Music</h1>
+    <p class="hero-desc">From Hildegard of Bingen's plainchant to Philip Glass's minimalism — the complete story of Western art music across eight eras and over 100 composers.</p>
+    <a href="#timeline" class="btn">Explore the Timeline ↓</a>
+  </div>
+</section>
+
+<!-- INTRO SECTION -->
+<section class="section-dark" id="intro">
+  <div class="container">
+    <h2>What is Classical Music?</h2>
+    <p class="lead">The term "classical music" covers roughly 1,000 years of Western art music — from medieval monks singing plainchant in stone churches to composers today working with electronics, mathematics, and silence itself. It is not one thing. It is eight distinct eras, each with its own aesthetic, its own rules, and its own revolution.</p>
+    <div class="intro-grid">
+      <div class="intro-card">
+        <span class="intro-num">100+</span>
+        <span class="intro-label">Composers</span>
+      </div>
+      <div class="intro-card">
+        <span class="intro-num">1000</span>
+        <span class="intro-label">Years of Music</span>
+      </div>
+      <div class="intro-card">
+        <span class="intro-num">8</span>
+        <span class="intro-label">Distinct Eras</span>
+      </div>
+      <div class="intro-card">
+        <span class="intro-num">∞</span>
+        <span class="intro-label">Hours to Explore</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARALLAX DIVIDER 1 -->
+<section class="parallax parallax-divider" id="p1">
+  <div class="parallax-bg" style="background-image:url('https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=1800&q=80')"></div>
+  <div class="parallax-quote">
+    <blockquote>"Music is the shorthand of emotion."</blockquote>
+    <cite>— Leo Tolstoy</cite>
+  </div>
+</section>
+
+<!-- INTERACTIVE TIMELINE -->
+<section class="section-light" id="timeline">
+  <div class="container">
+    <h2>The Grand Timeline</h2>
+    <p class="lead">Drag to pan · Ctrl+scroll or pinch to zoom · Click a composer to visit their era.</p>
+  </div>
+  <div class="tl-controls">
+    <button id="tlZoomIn">＋</button>
+    <button id="tlReset">⊙</button>
+    <button id="tlZoomOut">－</button>
+  </div>
+  <div class="tl-viewport" id="tlViewport">
+    <div class="tl-axis-row" id="tlAxisTop"></div>
+    <div class="tl-world" id="tlWorld"></div>
+    <div class="tl-axis-row" id="tlAxisBot"></div>
+  </div>
+  <div class="timeline-tooltip" id="tooltip"></div>
+</section>
+
+<!-- ERAS GRID -->
+<section class="section-dark" id="eras">
+  <div class="container">
+    <h2>Eight Eras</h2>
+    <p class="lead">Each era was a revolution — a rejection of what came before and an invention of something new.</p>
+    <div class="eras-grid">
+      <a href="early-music.html" class="era-card" style="--era-color:#8fbc5a">
+        <div class="era-years">1000 – 1400</div>
+        <h3>Early Music</h3>
+        <p>Plainchant, polyphony, and the birth of notation. The Church shapes everything.</p>
+        <div class="era-composers">Hildegard · Machaut · Léonin</div>
+      </a>
+      <a href="renaissance.html" class="era-card" style="--era-color:#c8a96e">
+        <div class="era-years">1400 – 1600</div>
+        <h3>Renaissance</h3>
+        <p>Humanism arrives. Polyphony reaches its peak. Opera is invented.</p>
+        <div class="era-composers">Palestrina · Tallis · Byrd</div>
+      </a>
+      <a href="baroque.html" class="era-card" style="--era-color:#e07b39">
+        <div class="era-years">1600 – 1750</div>
+        <h3>Baroque</h3>
+        <p>Drama, ornament, and the basso continuo. Bach and Handel at the summit.</p>
+        <div class="era-composers">Bach · Handel · Vivaldi</div>
+      </a>
+      <a href="classical-era.html" class="era-card" style="--era-color:#4a90d9">
+        <div class="era-years">1750 – 1820</div>
+        <h3>Classical Era</h3>
+        <p>Clarity, balance, and form. The symphony and string quartet perfected.</p>
+        <div class="era-composers">Mozart · Haydn · Beethoven</div>
+      </a>
+      <a href="romantic.html" class="era-card" style="--era-color:#c0392b">
+        <div class="era-years">1810 – 1920</div>
+        <h3>Romantic Era</h3>
+        <p>Emotion unleashed. Orchestras swell. Wagner reinvents opera.</p>
+        <div class="era-composers">Chopin · Wagner · Tchaikovsky</div>
+      </a>
+      <a href="nationalism.html" class="era-card" style="--era-color:#8e44ad">
+        <div class="era-years">1830 – 1920</div>
+        <h3>Nationalism</h3>
+        <p>Folk music becomes art music. Identity becomes political.</p>
+        <div class="era-composers">Dvořák · Grieg · Sibelius</div>
+      </a>
+      <a href="modern.html" class="era-card" style="--era-color:#6c3483">
+        <div class="era-years">1900 – 1950</div>
+        <h3>Modern Era</h3>
+        <p>Tonality shatters. Stravinsky riots. Schoenberg invents the 12-tone system.</p>
+        <div class="era-composers">Debussy · Stravinsky · Bartók</div>
+      </a>
+      <a href="contemporary.html" class="era-card" style="--era-color:#c0397b">
+        <div class="era-years">1950 – present</div>
+        <h3>Contemporary</h3>
+        <p>Silence is music. Minimalism. Electronics. Everything is possible.</p>
+        <div class="era-composers">Cage · Glass · Reich</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PARALLAX DIVIDER 2 -->
+<section class="parallax parallax-divider" id="p2">
+  <div class="parallax-bg" style="background-image:url('https://images.unsplash.com/photo-1519683109079-d5f539e1542f?w=1800&q=80')"></div>
+  <div class="parallax-quote">
+    <blockquote>"Without music, life would be a mistake."</blockquote>
+    <cite>— Friedrich Nietzsche</cite>
+  </div>
+</section>
+
+<!-- GRAPH VIEW -->
+<section class="section-light" id="graph">
+  <div class="container">
+    <h2>Composer Graph</h2>
+    <p class="lead">All composers as an interconnected network — nodes grouped by era, edges showing influence. Drag to pan · scroll to zoom · click a node to visit their era.</p>
+  </div>
+  <div class="graph-controls">
+    <button class="graph-btn active" data-filter="all">All</button>
+    <button class="graph-btn" data-filter="Early Music">Early Music</button>
+    <button class="graph-btn" data-filter="Renaissance">Renaissance</button>
+    <button class="graph-btn" data-filter="Baroque">Baroque</button>
+    <button class="graph-btn" data-filter="Classical Era">Classical</button>
+    <button class="graph-btn" data-filter="Romantic Era">Romantic</button>
+    <button class="graph-btn" data-filter="Nationalism">Nationalism</button>
+    <button class="graph-btn" data-filter="Modern Era">Modern</button>
+    <button class="graph-btn" data-filter="Contemporary">Contemporary</button>
+    <div class="graph-zoom-btns">
+      <button id="gZoomIn">＋</button>
+      <button id="gReset">⊙</button>
+      <button id="gZoomOut">－</button>
+    </div>
+  </div>
+  <canvas id="graphCanvas"></canvas>
+  <div class="graph-tooltip" id="graphTooltip"></div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p>1000 Years of Classical Music · Built from an Obsidian Vault</p>
+    <div class="footer-links">
+      <a href="early-music.html">Early Music</a>
+      <a href="renaissance.html">Renaissance</a>
+      <a href="baroque.html">Baroque</a>
+      <a href="classical-era.html">Classical</a>
+      <a href="romantic.html">Romantic</a>
+      <a href="nationalism.html">Nationalism</a>
+      <a href="modern.html">Modern</a>
+      <a href="contemporary.html">Contemporary</a>
+    </div>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
